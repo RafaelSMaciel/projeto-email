@@ -31,7 +31,7 @@ def recuperar_emails(remetente):
     except Exception as e:
         print(f"Ocorreu um problema, {e}")
     print(f"Processo Concluido.")
-    
+
     emails_vari_recuperdos = 'email' if emails_recuperados == 1 else 'emails'
     emails_vari_verificados = 'email' if emails_verificados == 1 else 'emails'
 
@@ -41,4 +41,5 @@ remetentes_a_recuperar = [
 'noreply@telegram.org'
 ]
 
-recuperar_emails(remetentes_a_recuperar)
+if __name__ == '__main__':  
+    recuperar_emails(remetentes_a_recuperar)
