@@ -2,7 +2,6 @@ import win32com.client as win32
 from win32com.client import Dispatch
 import traceback
 
-
 def excluir_emails(remetente):
     try:
         outlook = Dispatch('outlook.application').GetNamespace('MAPI')
@@ -35,12 +34,8 @@ def excluir_emails(remetente):
     except Exception as e:
         print("Erro ao processar outlook {e}")
 
-
-remententes_a_excluir = [
-'noreply@telegram.org'
-]
-
-
+#Preencher a lista com os Remetentes que os E-mails serão excluidos.
+remententes_a_excluir = []
 
 if __name__ == "__main__":
     print("Iniciando exclusão de emails")
