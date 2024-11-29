@@ -45,6 +45,3 @@ remententes_a_excluir = [
 if __name__ == "__main__":
     print("Iniciando exclusão de emails")
     excluir_emails(remententes_a_excluir)
-
-
-
